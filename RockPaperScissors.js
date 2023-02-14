@@ -13,14 +13,14 @@ function getComputerChoice() {
 	}
 }
 
-const victories = [["Paper", "Rock"], ["Scissors", "Paper"], ["Rock", "Scissors"]];
+const victories = ["Paper Rock", "Scissors Paper", "Rock Scissors"];
 
 function playRound(playerSelection, computerSelection) {
 	playerSelection = playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase(); //I hope this works
 	console.log(playerSelection);
-	if (victories.includes([playerSelection, computerSelection])) {
+	if (victories.includes(`${playerSelection} ${computerSelection}`)) {
 		return `You win! ${playerSelection} beats ${computerSelection}`;	
-	} else if (victories.includes([computerSelection, playerSelection])) {
+	} else if (victories.includes(`${computerSelection} ${playerSelection}`)) {
 		return `You lose! ${computerSelection} beats ${playerSelection}`;
 	} else {
 		return `It's a tie! Both players have chosen ${playerSelection}`;
