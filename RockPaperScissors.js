@@ -39,10 +39,10 @@ function game() {
 		let playerSelection = prompt("Make your move: ");	
 		let round = playRound(playerSelection, getComputerChoice());
 		switch(round.substring(0, 8)) {
-			case "You win":
+			case "You win!":
 				playerScore++;
 				break;
-			case "You los":
+			case "You lose":
 				computerScore++;
 				break;
 			default:
