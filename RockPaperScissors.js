@@ -47,7 +47,7 @@ function game() {
 			default:
 				break;
 		}
-		console.log(round);
+		console.log(`Round ${i+1}: ${round}`);
 	}
 	console.log(`Player: ${playerScore} \nComputer: ${computerScore}`)
 	if (playerScore > computerScore) {
