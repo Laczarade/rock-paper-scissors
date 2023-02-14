@@ -26,3 +26,7 @@ function playRound(playerSelection, computerSelection) {
 		return `It's a tie! Both players have chosen ${playerSelection}`;
 	}
 }
+
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection, computerSelection));
