@@ -58,3 +58,17 @@ function game() {
 		console.log("It's a tie!");
 	}
 }
+
+//Buttons 
+const rockButton = document.querySelector("#rock");
+rockButton.addEventListener("click", (e) => {
+	console.log(playRound("rock", getComputerChoice()));
+});
+const paperButton = document.querySelector("#paper");
+paperButton.addEventListener("click", (e) => {
+	console.log(playRound("paper", getComputerChoice()));
+});
+const scissorsButton = document.querySelector("#scissors");
+scissorsButton.addEventListener("scissors", (e) => {
+	console.log(playRound("scissors", getComputerChoice()));	
+});
