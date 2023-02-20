@@ -58,17 +58,21 @@ function game() {
 		console.log("It's a tie!");
 	}
 }
+//result div
+const result = document.querySelector("#result");
 
 //Buttons 
 const rockButton = document.querySelector("#rock");
 rockButton.addEventListener("click", (e) => {
-	console.log(playRound("rock", getComputerChoice()));
+	result.textContent = playRound("rock", getComputerChoice());
 });
+
 const paperButton = document.querySelector("#paper");
 paperButton.addEventListener("click", (e) => {
-	console.log(playRound("paper", getComputerChoice()));
+	result.textContent = playRound("paper", getComputerChoice());
 });
+
 const scissorsButton = document.querySelector("#scissors");
-scissorsButton.addEventListener("scissors", (e) => {
-	console.log(playRound("scissors", getComputerChoice()));	
+scissorsButton.addEventListener("click", (e) => {
+	result.textContent = playRound("scissors", getComputerChoice());	
 });
